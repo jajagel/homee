@@ -1,3 +1,9 @@
+<?php
+    session_start(); 
+    if(!isset($_SESSION['count']) || $_SESSION['count']==NULL || $_SESSION['count']==[] ){
+        $_SESSION['count'] = 0;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <?php
-        session_start(); 
-        if(!isset($_SESSION['count']) || $_SESSION['count']==NULL || $_SESSION['count']==[] ){
-            $_SESSION['count'] = 0;
-        }
-    ?>
+    
     <header>
         <nav>
             <a href="index.php" class="logo">

@@ -10,13 +10,5 @@ if(isset($_POST['id'])) {
     }
     $_SESSION['count']--;
 }
-foreach ($_SESSION['cart'] as $key => $item) {
-   
-       echo $item['id'];
-    
-}
-echo $_SESSION['count'];
-session_write_close();
-header('Location: ' . $_SERVER['PHP_SELF']);
-exit();
+echo true;
 ?>

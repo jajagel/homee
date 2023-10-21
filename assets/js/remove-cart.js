@@ -8,8 +8,12 @@ $(document).ready(function () {
       data: {
         id: productId,
       },
-      success: function () {
-        location.reload();
+      success: function (response) {
+        $(".btn-remove").prop("disabled", true);
+        if (response) {
+          $(".btn-remove").prop("disabled", false);
+          location.reload();
+        }
       },
     });
   });
