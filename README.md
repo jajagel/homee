@@ -44,7 +44,7 @@
 1. Navigate to your browser and type in “localhost/homee”
 2. The URL should load the web application.
 
-# Screenshots
+## Screenshots
 
 <img src="./assets/images/screenshots/home.png" width="600" />
 <img src="./assets/images/screenshots/product.png" width="600" />
