@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $(".btn-remove").click(function () {
+    $(".btn-remove").prop("disabled", true);
     let product = $(this).closest(".cart-itm-details");
     let productId = product.data("id");
     $.ajax({
@@ -9,7 +10,6 @@ $(document).ready(function () {
         id: productId,
       },
       success: function (response) {
-        $(".btn-remove").prop("disabled", true);
         if (response) {
           $(".btn-remove").prop("disabled", false);
           location.reload();
