@@ -1,7 +1,7 @@
 <?php
     $host = 'localhost';
     $dbname = 'homee_db';
-    $username = '';
+    $username = 'root';
     $password = '';
 
     try {
